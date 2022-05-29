@@ -34,7 +34,7 @@ services:
     build:
       context: ./frontend
     volumes:
-      - ./frontend:/code/frontend
+      - ./frontend/src:/code/frontend/src
     ports:
       - 8080:3000
     depends_on:

@@ -4,7 +4,7 @@ services:
 
   mysql:
     image: mysql:5.7
-    container_name: login-mysql
+    container_name: login-mysql-fullstack
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: 'toor'
@@ -12,7 +12,7 @@ services:
 
   backend:
     image: login-backend
-    container_name: login-backend
+    container_name: login-backend-fullstack
     restart: unless-stopped
     command: 'python3 -m api'
     build:
@@ -29,7 +29,7 @@ services:
 
   frontend:
     image: login-frontend
-    container_name: login-frontend
+    container_name: login-frontend-fullstack
     restart: unless-stopped
     build:
       context: ./frontend

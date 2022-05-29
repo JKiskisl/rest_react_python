@@ -1,5 +1,11 @@
 ## Installation
 
+Get into project `login-react-python` folder.
+
+```bash
+cd login-react-python
+```
+
 Use [docker](https://docs.docker.com/engine/install/) to run apllication.
 
 ```bash
@@ -8,10 +14,10 @@ docker-compose up
 
 ## Usage
 
-Backend, on port [8081](http://localhost:8081/)
+Frontend application will be on port [8080](http://localhost:8080/) and the backend, on port [8081](http://localhost:8081/)
 
 ## Stack
-MySQL, FastAPI, Python3
+MySQL, FastAPI, Python3, React, Nodejs
 
 ## Subjects
 - Project:
@@ -27,3 +33,9 @@ MySQL, FastAPI, Python3
   - Swagger
   - PyPi packages
   - JWT
+- Frontend:
+  - Bootstrap 5
+  - React
+    - Hooks
+    - Context API
+  - Axios

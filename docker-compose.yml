@@ -26,3 +26,16 @@ services:
       - 8081:8080
     depends_on:
       - mysql
+
+  frontend:
+    image: login-frontend
+    container_name: login-frontend
+    restart: unless-stopped
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/code/frontend
+    ports:
+      - 8080:3000
+    depends_on:
+      - mysql
